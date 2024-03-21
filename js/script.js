@@ -48,44 +48,53 @@ var solutionChart; // Variable global para almacenar la instancia del gráfico
           yValues.push(yNext);
         }
       }
+// Obtener el contexto del gráfico
+var ctx = document.getElementById('solutionChart').getContext('2d');
 
-      // Obtener el contexto del gráfico
-      var ctx = document.getElementById('solutionChart').getContext('2d');
+// Calcular el ancho del lienzo del gráfico
+var chartWidth = Math.min(window.innerWidth, 500); // Limitar el ancho máximo a 500px para dispositivos móviles
 
-      // Si existe una instancia anterior del gráfico, destrúyela
-      if (solutionChart) {
-        solutionChart.destroy();
-      }
+// Configurar el tamaño del lienzo del gráfico
+document.getElementById('solutionChart').style.width = chartWidth + 'px';
+document.getElementById('solutionChart').style.height = (chartWidth * 0.75) + 'px'; // Proporción 4:3
 
-      // Mostramos la solución en el gráfico
-      solutionChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: xValues,
-          datasets: [{
-            label: 'Solución',
-            data: yValues,
-            borderColor: 'blue',
-            borderWidth: 1
-          }]
-        },
-        options: {
-          scales: {
-            x: {
-              title: {
-                display: true,
-                text: 'x'
-              }
-            },
-            y: {
-              title: {
-                display: true,
-                text: 'y'
-              }
-            }
-          }
+// Si existe una instancia anterior del gráfico, destrúyela
+if (solutionChart) {
+  solutionChart.destroy();
+}
+
+// Mostramos la solución en el gráfico
+solutionChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: xValues,
+    datasets: [{
+      label: 'Solución',
+      data: yValues,
+      borderColor: 'blue',
+      borderWidth: 1
+    }]
+  },
+  options: {
+    responsive: true, // Permitir que el gráfico sea responsive
+    maintainAspectRatio: false, // No mantener el aspecto de la relación de aspecto
+    scales: {
+      x: {
+        title: {
+          display: true,
+          text: 'x'
         }
-      });
+      },
+      y: {
+        title: {
+          display: true,
+          text: 'y'
+        }
+      }
+    }
+  }
+});
+
 
       // Mostramos la solución como texto
       document.getElementById('result').innerText = 'La solución de la ecuación es: y(x) = ' + yValues.join(', ');

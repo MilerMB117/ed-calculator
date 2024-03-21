@@ -68,8 +68,8 @@ function solveEquation() {
 
   // Obtener el contexto del gráfico
   var ctx = document.getElementById('solutionChart').getContext('2d');
-  
-// Calcular el ancho del lienzo del gráfico
+
+  // Calcular el ancho del lienzo del gráfico
 var chartWidth = Math.min(window.innerWidth, 500); // Limitar el ancho máximo a 500px para dispositivos móviles
 
 // Configurar el tamaño del lienzo del gráfico
@@ -118,7 +118,7 @@ document.getElementById('solutionChart').style.height = (chartWidth * 0.75) + 'p
   equationInfo += `Rango de x: [${xStart}, ${xEnd}]\n`;
   equationInfo += `Paso: ${xStep}\n`;
   equationInfo += `Valor inicial de y: ${yInitial}\n`;
-  equationInfo += `Resultado: y(x) = ${yValues.join(', ')}`;
+  equationInfo += `Resultado: y(x) = ${yValues.map(value => value.toFixed(4)).join(', ')}`; // Redondear los valores de y a 4 decimales
 
   // Mostrar la solución como texto
   document.getElementById('result').innerText = equationInfo;

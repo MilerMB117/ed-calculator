@@ -137,3 +137,10 @@ function clearValidationAlerts() {
     alert.remove();
   });
 }
+function openExampleEquations() {
+  // Crear un elemento <a> para descargar el archivo de texto
+  var link = document.createElement('a');
+  link.href = '/ejemplos.txt'; // Reemplaza 'ruta/a/tu/archivo.txt' con la ruta de tu archivo de texto
+  link.download = 'ejemplos_ecuaciones.txt'; // Nombre del archivo de descarga
+  link.click(); // Simular un clic en el enlace para iniciar la descarga
+}

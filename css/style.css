@@ -2,3 +2,13 @@
 body {
     font-family: 'Poppins', sans-serif;
   }
+
+.equation {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    white-space: pre-line;
+  }

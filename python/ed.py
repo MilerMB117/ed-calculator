@@ -51,7 +51,7 @@ def solve_equation():
 
     # Graficar la solución
     plt.figure(figsize=(8, 6))
-    plt.plot(x_values, y_values, label='Solución de Euler', color='purple')  # Configurar el color a morado
+    plt.plot(x_values, y_values, label='Solución de Euler', color='purple') 
     plt.title('Solución de Ecuación Diferencial {} usando Método de Euler'.format(equation))
     plt.xlabel('x')
     plt.ylabel('y')

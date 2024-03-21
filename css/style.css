@@ -36,3 +36,12 @@ font-weight: bold;
     background-color: rgb(11, 2, 20);
     border-color: rgb(88, 0, 170);
   }
+
+.validation-alert {
+    background-color: #f8d7da; /* Color de fondo */
+    color: #721c24; /* Color del texto */
+    border: 1px solid #f5c6cb; /* Borde */
+    border-radius: 5px; /* Borde redondeado */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 10px; /* Espaciado inferior */
+  }

@@ -13,12 +13,13 @@ function showAbout() {
 function solveEquation() {
   // Limpiar resultados y gráfico anterior
   document.getElementById('result').innerText = '';
+  clearValidationAlerts(); 
 
   var equationInput = document.getElementById('equationInput').value.trim();
 
   // Validar que se haya ingresado una ecuación
   if (!equationInput) {
-    alert('Por favor, ingrese una ecuación.');
+    displayValidationAlert('Por favor, ingrese una ecuación.');
     return;
   }
 
@@ -122,4 +123,17 @@ document.getElementById('solutionChart').style.height = (chartWidth * 0.75) + 'p
 
   // Mostrar la solución como texto
   document.getElementById('result').innerText = equationInfo;
+}
+function displayValidationAlert(message) {
+  var alertDiv = document.createElement('div');
+  alertDiv.classList.add('validation-alert');
+  alertDiv.innerText = message;
+  document.getElementById('homePage').prepend(alertDiv);
+}
+
+function clearValidationAlerts() {
+  var alerts = document.querySelectorAll('.validation-alert');
+  alerts.forEach(function(alert) {
+    alert.remove();
+  });
 }

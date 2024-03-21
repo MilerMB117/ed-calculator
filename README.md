@@ -13,6 +13,7 @@ Esta es una calculadora web simple que resuelve ecuaciones diferenciales de prim
 - HTML: para la estructura de la página web.
 - CSS (Bootstrap): para estilizar la página.
 - JavaScript: para la lógica de cálculo y la interactividad.
+- Python: para realizar los cálculos y generar UI.
 - Chart.js: para generar los gráficos.
 - Math.js: para evaluar expresiones matemáticas ingresadas por el usuario.
 

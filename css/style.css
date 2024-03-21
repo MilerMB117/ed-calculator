@@ -17,3 +17,6 @@ body {
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.158);
 }
+.card-header {
+font-weight: bold;
+}

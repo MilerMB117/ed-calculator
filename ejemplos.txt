@@ -6,7 +6,11 @@ dy/dx = cos(x)
 dy/dx = x * sin(x)
 dy/dx = sin(5*x)
 
-Python:
+
+
+---------------------------------------------
+
+Para Python:
 
 ---------------------------------------------
 Ecuación diferencial: dy/dx = x * y

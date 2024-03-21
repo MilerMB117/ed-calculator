@@ -1,5 +1,76 @@
+WEB Javascript:
+
 dy/dx = x^2
 dy/dx = e^(-x)
 dy/dx = cos(x)
 dy/dx = x * sin(x)
 dy/dx = sin(5*x)
+
+Python:
+
+---------------------------------------------
+Ecuación diferencial: dy/dx = x * y
+Valores de entrada:
+
+x0 = 0
+y0 = 1
+Tamaño del paso (h) = 0.1
+x End = 2
+---------------------------------------------
+
+Ecuación diferencial: dy/dx = x**2 - y
+Valores de entrada:
+
+x0 = 0
+y0 = 1
+Tamaño del paso (h) = 0.1
+x End = 2
+---------------------------------------------
+
+Ecuación diferencial: dy/dx = 2*x*y
+Valores de entrada:
+
+x0 = 0
+y0 = 1
+Tamaño del paso (h) = 0.1
+x End = 2
+---------------------------------------------
+Ecuación diferencial: dy/dx = y - x**2 + 1
+Valores de entrada:
+
+x0 = 0
+y0 = 0.5
+Tamaño del paso (h) = 0.1
+x End = 2
+---------------------------------------------
+Ecuación diferencial: dy/dx = y/x + x**2
+Valores de entrada:
+
+x0 = 1
+y0 = 1
+Tamaño del paso (h) = 0.1
+x End = 3
+---------------------------------------------
+Ecuación diferencial: dy/dx = sin(x) * cos(y)
+Valores de entrada:
+
+x0 = 0
+y0 = 1
+Tamaño del paso (h) = 0.1
+x End = 2
+---------------------------------------------
+Ecuación diferencial: dy/dx = exp(-x) + y**2
+Valores de entrada:
+
+x0 = 0
+y0 = 0
+Tamaño del paso (h) = 0.1
+x End = 2
+---------------------------------------------
+Ecuación diferencial: dy/dx = 1 / (1 + x**2)
+Valores de entrada:
+
+x0 = 0
+y0 = 0
+Tamaño del paso (h) = 0.1
+x End = 2

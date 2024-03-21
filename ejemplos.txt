@@ -1,0 +1,5 @@
+dy/dx = x^2
+dy/dx = e^(-x)
+dy/dx = cos(x)
+dy/dx = x * sin(x)
+dy/dx = sin(5*x)

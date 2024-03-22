@@ -1,51 +1,51 @@
-
 body {
-    font-family: 'Poppins', sans-serif;
-  }
+  font-family: "Poppins", sans-serif;
+}
 
 .equation {
-      font-size: 16px;
-      font-family: 'Poppins', sans-serif;
-      background-color: #f8f9fa;
-      padding: 10px;
-      border-radius: 5px;
-      margin-bottom: 10px;
-      white-space: pre-line;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  white-space: pre-line;
 }
 
-.card{
-    border-radius: 25px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.158);
-    margin-bottom: 10px;
+.card {
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.158);
+  margin-bottom: 10px;
 }
 .card-header {
-font-weight: bold;
+  font-weight: bold;
 }
 
-.navbar{
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.158);
+.navbar {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.158);
 }
 
-.btn{
-    background-color: rgb(88, 0, 170);
-    border-color: rgb(88, 0, 170);
-    border-radius: 25px;
+.btn {
+  background-color: rgb(88, 0, 170);
+  border-color: rgb(88, 0, 170);
+  border-radius: 25px;
 }
 .btn:hover {
-    background-color: rgb(11, 2, 20);
-    border-color: rgb(88, 0, 170);
-  }
+  background-color: rgb(11, 2, 20);
+  border-color: rgb(88, 0, 170);
+}
 
 .validation-alert {
-    background-color: #f8d7da; /* Color de fondo */
-    color: #721c24; /* Color del texto */
-    border: 1px solid #f5c6cb; /* Borde */
-    border-radius: 5px; /* Borde redondeado */
-    padding: 10px; /* Espaciado interno */
-    margin-bottom: 10px; /* Espaciado inferior */
-  }
+  background-color: #f8d7da; /* Color de fondo */
+  color: #721c24; /* Color del texto */
+  border: 1px solid #f5c6cb; /* Borde */
+  border-radius: 5px; /* Borde redondeado */
+  padding: 10px; /* Espaciado interno */
+  margin-bottom: 10px; /* Espaciado inferior */
+}
 
-.form-control{
+.form-control {
   border-radius: 25px;
+  background-color: #f8f9fa;
 }

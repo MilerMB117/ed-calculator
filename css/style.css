@@ -45,3 +45,7 @@ font-weight: bold;
     padding: 10px; /* Espaciado interno */
     margin-bottom: 10px; /* Espaciado inferior */
   }
+
+.form-control{
+  border-radius: 25px;
+}
